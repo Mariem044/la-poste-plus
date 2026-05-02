@@ -24,7 +24,7 @@ function RegisterPage() {
   const [confirm, setConfirm] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!fullName || !matricule || !email || !password) {
       setError("Veuillez remplir tous les champs.");
@@ -46,21 +46,7 @@ function RegisterPage() {
     navigate({ to: "/home" });
   };
 
-  const Field = ({
-    label,
-    icon: Icon,
-    type = "text",
-    value,
-    onChange,
-    placeholder,
-  }: {
-    label: string;
-    icon: React.ComponentType<{ className?: string }>;
-    type?: string;
-    value: string;
-    onChange: (v: string) => void;
-    placeholder?: string;
-  }) => (
+  const Field = ({ label, icon: Icon, type = "text", value, onChange, placeholder }) => (
     <div>
       <label className="block text-sm font-medium text-foreground">{label}</label>
       <div className="relative mt-1.5">

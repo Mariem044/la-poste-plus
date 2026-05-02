@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Globe, ChevronDown } from "lucide-react";
 
 export function LanguageSwitcher() {
-  const [lang, setLang] = useState<"FR" | "AR">("FR");
+  const [lang, setLang] = useState("FR");
   const [open, setOpen] = useState(false);
 
   return (
@@ -17,7 +17,7 @@ export function LanguageSwitcher() {
       </button>
       {open && (
         <div className="absolute right-0 mt-2 w-40 overflow-hidden rounded-lg border border-border bg-white shadow-lg">
-          {(["FR", "AR"] as const).map((l) => (
+          {["FR", "AR"].map((l) => (
             <button
               key={l}
               onClick={() => {

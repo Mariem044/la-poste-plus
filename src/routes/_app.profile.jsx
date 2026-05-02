@@ -16,7 +16,7 @@ function ProfilePage() {
   const [lastName, setLastName] = useState(user?.lastName ?? "");
   const [email, setEmail] = useState(user?.email ?? "");
   const [matricule, setMatricule] = useState(user?.matricule ?? "");
-  const [toast, setToast] = useState<string | null>(null);
+  const [toast, setToast] = useState(null);
 
   const [currentPwd, setCurrentPwd] = useState("");
   const [newPwd, setNewPwd] = useState("");
@@ -25,14 +25,14 @@ function ProfilePage() {
 
   const initials = `${firstName[0] ?? ""}${lastName[0] ?? ""}`.toUpperCase();
 
-  const handleSave = (e: React.FormEvent) => {
+  const handleSave = (e) => {
     e.preventDefault();
     updateUser({ firstName, lastName, email, matricule });
     setToast("Profil mis à jour avec succès !");
     setTimeout(() => setToast(null), 3000);
   };
 
-  const handlePwdSave = (e: React.FormEvent) => {
+  const handlePwdSave = (e) => {
     e.preventDefault();
     setPwdError("");
     if (!currentPwd || !newPwd) {

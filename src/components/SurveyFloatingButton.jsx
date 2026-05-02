@@ -7,7 +7,7 @@ export function SurveyFloatingButton() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
-  const [service, setService] = useState<string>("");
+  const [service, setService] = useState("");
   const [comment, setComment] = useState("");
   const [submitted, setSubmitted] = useState(false);
 

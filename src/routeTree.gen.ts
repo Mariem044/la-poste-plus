@@ -8,14 +8,14 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from './routes/__root'
-import { Route as RegisterRouteImport } from './routes/register'
-import { Route as LoginRouteImport } from './routes/login'
-import { Route as AppRouteImport } from './routes/_app'
+import { Route as rootRouteImport } from './routes/__root.jsx'
+import { Route as RegisterRouteImport } from './routes/register.jsx'
+import { Route as LoginRouteImport } from './routes/login.jsx'
+import { Route as AppRouteImport } from './routes/_app.jsx'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as AppProfileRouteImport } from './routes/_app.profile'
-import { Route as AppHomeRouteImport } from './routes/_app.home'
-import { Route as AppDashboardRouteImport } from './routes/_app.dashboard'
+import { Route as AppProfileRouteImport } from './routes/_app.profile.jsx'
+import { Route as AppHomeRouteImport } from './routes/_app.home.jsx'
+import { Route as AppDashboardRouteImport } from './routes/_app.dashboard.jsx'
 
 const RegisterRoute = RegisterRouteImport.update({
   id: '/register',

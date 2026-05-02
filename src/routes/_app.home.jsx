@@ -9,14 +9,7 @@ export const Route = createFileRoute("/_app/home")({
   component: HomePage,
 });
 
-type KPIProps = {
-  label: string;
-  value: string;
-  icon: React.ComponentType<{ className?: string }>;
-  accent?: boolean;
-};
-
-function KPICard({ label, value, icon: Icon, accent }: KPIProps) {
+function KPICard({ label, value, icon: Icon, accent }) {
   return (
     <div
       className={`rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:shadow-md ${

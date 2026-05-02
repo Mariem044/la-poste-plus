@@ -5,7 +5,7 @@ import { Header } from "./Header";
 import { SurveyFloatingButton } from "./SurveyFloatingButton";
 import { useAuth } from "../context/AuthContext";
 
-const TITLES: Record<string, string> = {
+const TITLES = {
   "/home": "Accueil",
   "/dashboard": "Dashboard PowerBI",
   "/profile": "Mon Profil",
