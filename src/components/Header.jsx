@@ -1,7 +1,7 @@
 import { Bell } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 
-export function Header({ title }: { title: string }) {
+export function Header({ title }) {
   const { user } = useAuth();
   return (
     <header className="sticky top-0 z-20 flex h-16 items-center justify-between border-b border-border bg-white/80 px-8 backdrop-blur-md">

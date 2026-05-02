@@ -7,9 +7,9 @@ const navItems = [
   { to: "/home", label: "Accueil", icon: Home },
   { to: "/dashboard", label: "Dashboard", icon: BarChart3 },
   { to: "/profile", label: "Mon Profil", icon: User },
-] as const;
+];
 
-function getInitials(first: string, last: string) {
+function getInitials(first, last) {
   return `${first?.[0] ?? ""}${last?.[0] ?? ""}`.toUpperCase();
 }
 

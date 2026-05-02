@@ -1,6 +1,4 @@
-type Props = { variant?: "dark" | "light"; className?: string };
-
-export function Logo({ variant = "dark", className = "" }: Props) {
+export function Logo({ variant = "dark", className = "" }) {
   const textColor = variant === "dark" ? "text-primary" : "text-white";
   const swooshColor = variant === "dark" ? "var(--primary)" : "#ffffff";
   return (
