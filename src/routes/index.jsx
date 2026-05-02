@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Accueil — La Poste Tunisienne" },
-      { name: "description", content: "Plateforme d'enquête de satisfaction de La Poste Tunisienne." },
+      { name: "description", content: "Plateforme de La Poste Tunisienne." },
     ],
   }),
   component: LandingPage,
@@ -30,7 +30,7 @@ function LandingPage() {
           <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Bienvenue à notre{" "}
             <span className="relative inline-block">
-              <span className="relative z-10 text-primary">plateforme d'enquête</span>
+              <span className="relative z-10 text-primary">plateforme </span>
               <span className="absolute bottom-1 left-0 -z-0 h-3 w-full bg-accent/40" />
             </span>
           </h1>
